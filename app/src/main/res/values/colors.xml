@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="material_dynamic_neutral50">#RRGGBB</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#092AFF</color>
+    <color name="colorPrimary">#F64008</color>
+    <color name="light_blue">#7ED4FF</color>
+    <color name="dark_blue">#045C99</color>
+    <color name="dark_gray">#333333</color>
+    <color name="light_gray">#B0B0B0</color>
+        <color name="greenColor">#06A693</color>
+    <color name="redColor">#FF0000</color>
+    <color name="my_primary">#FF5964</color>
+    <color name="my_secondary">#FFE74C</color>
+
+
+
+</resources>

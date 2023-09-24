@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar for displaying app name and user profile -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/greenColor">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/baseline_sentiment_very_satisfied_24" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/greenColor"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <!-- "Faculty Dashboards" Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Timetable Button -->
+            <Button
+                android:id="@+id/btnTimetable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:backgroundTint="@color/greenColor"
+                android:onClick="openTimetable"
+                android:text="Time Table"
+                android:drawableEnd="@drawable/baseline_view_timeline_24" /> <!-- Replace ic_timetable with your icon -->
+            <Button
+                android:id="@+id/openLMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/greenColor"
+                android:onClick="openLMS"
+                android:textSize="30dp"
+                android:text="Assignment"
+                android:drawableEnd="@drawable/baseline_pattern_24" /> <!-- Replace ic_attendance with your icon -->
+
+            <!-- Attendance Reports Button -->
+            <Button
+                android:id="@+id/Attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/greenColor"
+                android:onClick="openAttendanceReports"
+                android:textSize="30dp"
+                android:text="Attendance Reports"
+                android:drawableEnd="@drawable/baseline_pattern_24" /> <!-- Replace ic_attendance with your icon -->
+
+            <!-- Class Reports Button -->
+            <Button
+                android:id="@+id/updates"
+                android:layout_width="match_parent"
+                android:textSize="30dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/greenColor"
+                android:onClick="openUpdates"
+                android:text="Updates"
+                android:drawableEnd="@drawable/baseline_assignment_24" /> <!-- Replace ic_class_reports with your icon -->
+        </LinearLayout>
+            <!-- Profile Button -->
+
+    </LinearLayout>
+</RelativeLayout>

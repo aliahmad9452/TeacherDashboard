@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Modify Assignments"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <!-- Assignment Title -->
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Assignment Title"
+            android:minHeight="48dp" />
+
+        <!-- Assignment Description -->
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Assignment Description"
+            android:minHeight="48dp" />
+        <TextView
+            android:id="@+id/textViewTeacherName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teacher Name"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/greenColor"
+            android:focusable="false"
+            android:clickable="false" />
+
+
+        <Button
+            android:id="@+id/buttonSelectDueDate"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/greenColor"
+            android:layout_height="wrap_content"
+            android:text="Select Due Date"
+            android:minHeight="48dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR submit  PDF"
+            android:textStyle="bold"
+            android:textColor="@color/blue">
+            </TextView>
+
+        <Button
+            android:id="@+id/uploadPdfButton"
+            android:layout_width="354dp"
+            android:backgroundTint="@color/greenColor"
+            android:layout_height="wrap_content"
+            android:text="Upload PDF" />
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        </ProgressBar>
+
+        <Spinner
+            android:id="@+id/classSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:minHeight="48dp"
+            />
+
+        <Spinner
+            android:id="@+id/semesterItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:minHeight="48dp" />
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/greenColor"
+            android:text="Creat"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</RelativeLayout>

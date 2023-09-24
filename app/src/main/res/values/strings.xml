@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string-array name="classes_array">
+        <item>BSCS</item>
+        <item>BBA</item>
+        <item>BSIT</item>
+        <item>BS Psy</item>
+        <item>MSCS</item>
+        <item>MSIT</item>
+        <item>MS Finance</item>
+        <item>MS Math</item>
+        <item>MS Physics</item>
+        <!-- Add more class items as needed -->
+    </string-array>
+
+    <string-array name="semester8_array">
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+        <item>Semester 3</item>
+        <item>Semester 4</item>
+        <item>Semester 5</item>
+        <item>Semester 6</item>
+        <item>Semester 7</item>
+        <item>Semester 8</item>
+        <!-- Add more class items as needed -->
+    </string-array>
+
+    <string-array name="semester4_array">
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+        <item>Semester 3</item>
+        <item>Semester 4</item>
+        <!-- Add more class items as needed -->
+    </string-array>
+
+</resources>

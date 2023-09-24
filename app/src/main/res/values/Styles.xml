@@ -1,0 +1,17 @@
+<!-- styles.xml -->
+
+<resources>
+    <!-- Define a custom text appearance for the profile information -->
+    <style name="ProfileInfoText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Define a custom text appearance for the "Edit Profile" button -->
+    <style name="EditProfileButton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:padding">16dp</item>
+    </style>
+</resources>
